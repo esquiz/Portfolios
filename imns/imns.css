@@ -597,24 +597,20 @@ footer ul li a{
     color: #252936;
 }
 
-/* MOBILE */
-@media (max-width: 650px) {
-    .report {
-        padding: 80px 6%;
-    }
+/* Control for different screen sizes */
 
-    .files-content {
-        grid-template-columns: 1fr;
-        gap: 20px;
+@media (max-width: 768px) {
+    header{
+        gap: 1rem;
+        padding: 1rem 1rem;
     }
-
-    .file-card {
-        padding: 32px 24px;
+    header .logo{
+        font-size: 1rem;
     }
-}
-
-/* TABLET AND MOBILE */
-@media (max-width: 850px) {
+    header .visit-btn{
+        display: none;
+    }
+    
     .experimental {
         padding: 80px 6%;
     }
@@ -626,22 +622,7 @@ footer ul li a{
     .experiment-card {
         padding: 28px;
     }
-}
 
-@media (max-width: 480px) {
-    .experiment-card {
-        padding: 22px;
-        border-radius: 18px;
-    }
-
-    .experiment-heading h3 {
-        font-size: 1.45rem;
-    }
-}
-
-/* TABLET */
-
-@media (max-width: 800px) {
     .overview {
         padding: 80px 6%;
     }
@@ -663,24 +644,7 @@ footer ul li a{
     .overview-card {
         padding: 25px;
     }
-}
 
-@media (max-width: 480px) {
-    .overview-intro h1 {
-        font-size: 3rem;
-    }
-
-    .overview-card {
-        padding: 22px;
-        border-radius: 18px;
-    }
-
-    .overview-image {
-        border-radius: 15px;
-    }
-}
-
-@media (max-width: 800px) {
     .simulations {
         padding: 80px 6%;
     }
@@ -701,8 +665,60 @@ footer ul li a{
     }
 }
 
+
+
+
 /* MOBILE */
 @media (max-width: 600px) {
+    header #menu-icon{
+        display: block;
+
+    }
+    .nav-links{
+        position: absolute;
+        top: 100%;
+        margin-top: 1rem;
+        width: 90%;
+        padding: 1rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.9);
+        border-radius: 3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: none;
+    }
+    .nav-links li{
+        margin-top: 1.5rem;
+        padding: 1rem;
+    }
+    .nav-links.active{
+        display: block;
+
+    }
+    header{
+        padding: 1rem 3rem;
+        gap: 6rem;
+    }
+    header .logo{
+        font-size: 1rem;
+    }
+    .report {
+        padding: 80px 6%;
+    }
+
+    .files-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .file-card {
+        padding: 32px 24px;
+    }
+
     .simulation-card {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -726,5 +742,30 @@ footer ul li a{
 
     .github-btn {
         width: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .experiment-card {
+        padding: 22px;
+        border-radius: 18px;
+    }
+
+    .experiment-heading h3 {
+        font-size: 1.45rem;
+    }
+
+    .overview-intro h1 {
+        font-size: 3rem;
+    }
+
+    .overview-card {
+        padding: 22px;
+        border-radius: 18px;
+    }
+
+    .overview-image {
+        border-radius: 15px;
     }
 }

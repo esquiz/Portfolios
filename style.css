@@ -263,7 +263,7 @@ section{
     transform: translateY(-10px)scale(1.02);
 }
 .projects-card img{
-    max-height:400px;
+    max-height:300px;
     max-width:400px;
     height:auto;
     width:auto;
@@ -326,6 +326,7 @@ footer{
     gap: 1rem;
     align-items: center;
     justify-content: center;
+    background: #f8f9fb;
 }
 footer ul{
     display: flex;
@@ -335,6 +336,7 @@ footer ul{
 footer ul li a{
     color: black;
     font-weight: 600;
+    font-size: 1.3rem;
 }
 .copyright{
     font-size: 300;
@@ -447,5 +449,54 @@ footer ul li a{
     }
     footer ul{
         gap: 1rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .projects h2,
+    .experience h2{
+        font-size: 3.2rem;
+    }
+
+    .experience{
+        padding: 50px 5%
+    }
+
+    .experience-info{
+        max-width: 100%;
+    }
+
+    .grid-card{
+        padding: 22px;
+        border-radius: 18px;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        overflow-wrap: anywhere;
+        
+    }
+    .projects-card{
+        padding: 22px;
+        border-radius: 18px;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        width: 80%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        overflow-wrap: anywhere;
+    }
+
+    .projects-card img{
+        border-radius: 15px;
+        display: block;
+        object-fit: cover;
+        border-radius: 15px;
+        width: 70%;
+
     }
 }
