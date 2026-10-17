@@ -232,9 +232,10 @@ section{
     background-color: black;
     color: white;
 }
-.grid-card i{
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+.grid-card p{
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+    padding: 10px 0;
 }
 .grid-card span{
     font-size: 1.5rem;
@@ -304,7 +305,7 @@ section{
 
 /* Contact Section */
 
-.input-box{
+/* .input-box{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -331,6 +332,31 @@ section{
     top: 50%;
     left: 10px;
     transform: translate(50%,-50%);
+} */
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 6%;
+}
+
+.contact-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+.contact-text a {
+    color: rgb(0, 157, 255);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-text a:hover {
+    color: rgb(255, 0, 255);
+    text-decoration: underline;
 }
 
 /* Footer */
